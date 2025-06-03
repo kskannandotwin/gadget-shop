@@ -1,0 +1,75 @@
+<div class="container-fluid my-4">
+    <h2 class="mb-4">Inventory</h2>
+
+    <!-- Inventory Form -->
+    <form class="row g-3 mb-4">
+        <div class="col-md-2">
+            <input type="text" class="form-control" placeholder="Product Id" />
+        </div>
+        <div class="col-md-2">
+            <select class="form-select">
+                <option selected>Choose...</option>
+                <option value="1">Earphones</option>
+                <option value="2">Mobiles</option>
+                <option value="3">Playstation</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <input type="number" class="form-control" placeholder="Stock Available" />
+        </div>
+        <div class="col-md-2">
+            <input type="number" class="form-control" placeholder="Reorder Point" />
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+
+    <!-- Inventory Table -->
+    <h5 class="mb-3">Inventory Details</h5>
+    <div class="table-responsive">
+        <table class="table table-bordered align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Product Id</th>
+                    <th scope="col">Stock Available</th>
+                    <th scope="col">Reorder Point</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>1001</td>
+                    <td>130</td>
+                    <td>50</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>1002</td>
+                    <td>200</td>
+                    <td>60</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>1003</td>
+                    <td>600</td>
+                    <td>50</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
